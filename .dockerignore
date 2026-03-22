@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.ipynb
+.ipynb_checkpoints/
+fig_*.png
+research_centers_clustered.csv
+.git/
+.gitignore
+.DS_Store

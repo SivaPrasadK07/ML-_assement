@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: research_center_classifier
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount CSV so the app can re-train if the PKL is absent
+      - ./research_centers.csv:/app/research_centers.csv:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

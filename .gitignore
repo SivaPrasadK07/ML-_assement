@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Model artifacts (optionally track in git-lfs)
+# cluster_model.pkl
+
+# Output data
+research_centers_clustered.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Figures generated at runtime
+fig_*.png
+
+# Docker
+.dockerenv
